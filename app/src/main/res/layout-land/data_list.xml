@@ -6,48 +6,35 @@
 
     <TextView
         android:id="@+id/defect_code"
+        android:text="Defect Code"
+        android:textSize="15sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:background="@color/colorPrimary"
         android:gravity="center"
-        android:layout_marginLeft="15dp"
-        android:text="Defect Code"
-        android:textSize="15sp" />
-
+        android:layout_weight="1"/>
     <TextView
         android:id="@+id/defect_value"
+        android:text="Vaue"
+        android:textSize="15sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:background="@color/colorPrimary"
         android:gravity="center"
-        android:layout_marginLeft="40dp"
-        android:text="Vaue"
-        android:textSize="15sp" />
-
+        android:layout_weight="1"/>
     <TextView
         android:id="@+id/defect_location"
+        android:text="Location"
+        android:textSize="15sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="4"
-        android:background="@color/colorPrimary"
         android:gravity="center"
-        android:layout_marginLeft="50dp"
-        android:text="Location"
-        android:textSize="15sp" />
-
+        android:layout_weight="4"/>
     <TextView
         android:id="@+id/delete"
+        android:text="x"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
         android:paddingHorizontal="15dp"
-        android:text="x"
-        android:textSize="20sp" />
+        android:gravity="center"/>
 
 </LinearLayout>

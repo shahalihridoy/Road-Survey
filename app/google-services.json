@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "795389097160",
+    "firebase_url": "https://roadsurvey-e7902.firebaseio.com",
+    "project_id": "roadsurvey-e7902",
+    "storage_bucket": "roadsurvey-e7902.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795389097160:android:8e02834494a1659f",
+        "android_client_info": {
+          "package_name": "io.github.shahalihridoy.roadsurvey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795389097160-15lk87rdka8cjhkeos9oksd3b8kai4m6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.github.shahalihridoy.roadsurvey",
+            "certificate_hash": "f26c4b6b60cab8efbfab4ebfab0f57ed6888c2be"
+          }
+        },
+        {
+          "client_id": "795389097160-sue0j42ca1pcn3f3qcor6sn71sppieva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaRFPP2M4GDKOxdpb65tFXqIcaoSsz2G0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795389097160-sue0j42ca1pcn3f3qcor6sn71sppieva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

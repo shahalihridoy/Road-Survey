@@ -1,6 +1,7 @@
 package io.github.shahalihridoy.roadsurvey;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,12 +14,16 @@ import java.util.List;
 public class CustomDataAdapter extends BaseAdapter{
 
     Context context;
+    MainActivity mainActivity;
     List<DataTableCreator> fnf;
     public static LayoutInflater inflater = null;
+    Database db;
 
     public CustomDataAdapter(MainActivity mainActivity, List<DataTableCreator> fnf) {
         this.context = mainActivity;
+        this.mainActivity = mainActivity;
         this.fnf = fnf;
+        db = new Database(context.getApplicationContext());
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -42,7 +47,7 @@ public class CustomDataAdapter extends BaseAdapter{
 
         Helper helper = new Helper();
 
-        View view = inflater.inflate(R.layout.data_list, null);
+        final View view = inflater.inflate(R.layout.data_list, null);
 
         helper.dCodetextView = (TextView) view.findViewById(R.id.defect_code);
         helper.dValueTextView = (TextView) view.findViewById(R.id.defect_value);
@@ -57,7 +62,9 @@ public class CustomDataAdapter extends BaseAdapter{
         helper.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("you clicked on "+fnf.get(position));
+                db.deletes("road_survey","rowid",fnf.get(position).rid);
+                mainActivity.refreshItemFragment();
+                System.out.println("you clicked on "+fnf.get(position).rid);
             }
         });
 
